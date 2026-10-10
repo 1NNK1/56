@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Демо</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="box">
+        <p class="tag" id="tag"></p>
+        <h1 id="title"></h1>
+        <p id="description"></p>
+      </header>
+
+      <div class="info">
+        <section class="box">
+          <h2>Что показывает</h2>
+          <ul id="shows"></ul>
+        </section>
+        <section class="box">
+          <h2>Как проверить</h2>
+          <ul id="how"></ul>
+        </section>
+      </div>
+
+      <h2>Код демо (<span id="demo-name"></span>)</h2>
+      <pre class="code" id="source"></pre>
+
+      <h2>Запуск</h2>
+      <div class="toolbar">
+        <button id="run" type="button">Запустить демо</button>
+        <span class="status" id="status">Ещё не запускалось</span>
+      </div>
+      <pre id="stdout">Результат появится здесь</pre>
+      <pre class="error" id="stderr" hidden></pre>
+      <p class="status" id="created" hidden></p>
+
+      <h2>Структура проекта</h2>
+      <pre class="code" id="tree"></pre>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

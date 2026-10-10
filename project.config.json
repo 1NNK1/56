@@ -1,0 +1,16 @@
+{
+  "number": 56,
+  "title": "Асинхронный цикл событий Node.js",
+  "description": "Порядок выполнения process.nextTick, setImmediate и setTimeout(0) с логированием каждой операции.",
+  "shows": [
+    "nextTick выполняется сразу после текущей синхронной операции",
+    "setImmediate и setTimeout попадают в разные фазы цикла событий",
+    "asyncOperationDemo возвращает порядок фактического выполнения"
+  ],
+  "how": [
+    "Нажмите «Запустить демо»",
+    "Сравните порядок строк в выводе, при повторных запусках порядок setTimeout и setImmediate может меняться"
+  ],
+  "demo": "src/demo.js",
+  "main": "src/main.js"
+}
